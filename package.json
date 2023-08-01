@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "start": "npm run watch",
+    "run": "go run .",
+    "watch": "npx nodemon@latest --ext go --exec go run .",
+    "update": "npm run upgrade",
+    "upgrade": "rm -f go.mod go.sum && go mod init && go mod tidy"
+  }
+}
